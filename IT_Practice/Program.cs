@@ -11,8 +11,8 @@ namespace IT_Practice
         static void Main(string[] args)
         {
             //EmptyArr();
-            //ArrThreeElements();
-            FindMaxElementInArray();
+            ArrThreeElements();
+            //FindMaxElementInArray();
             
             
             void FindMaxElementInArray()
@@ -38,21 +38,22 @@ namespace IT_Practice
                     }
                 }
                 Console.WriteLine(maxValue);
+                Console.Read();
             }
 
             void ArrThreeElements()
             {
-                string[] arr = new string[] {"32", "A", "Hello" };
+                object[] arrObj = new object[] { 32, 'A', "Hello" };
 
-                foreach (var item in arr)
+                foreach (var item in arrObj)
                 {
                     Console.WriteLine(item);
                 }
 
-                arr[0] = Convert.ToString((Convert.ToInt32(arr[0]) + 10));
-                arr[2] = arr[2] + ", guys!";
+                arrObj[0] = (int)arrObj[0] + 10;
+                arrObj[2] = arrObj[2] + ", guys!";
 
-                foreach (var item in arr)
+                foreach (var item in arrObj)
                 {
                     Console.WriteLine(item);
                 }
