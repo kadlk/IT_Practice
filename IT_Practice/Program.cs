@@ -10,6 +10,14 @@ namespace IT_Practice
     {
         static void Main(string[] args)
         {
+            EmptyArr();
+
+            void EmptyArr()
+            {
+                int[] emptyArr = new int[0];
+                Console.WriteLine(emptyArr.Length);
+                Console.Read();
+            }
         }
     }
 }
