@@ -10,7 +10,28 @@ namespace IT_Practice
     {
         static void Main(string[] args)
         {
-            EmptyArr();
+            //EmptyArr();
+            ArrThreeElements();
+
+            void ArrThreeElements()
+            {
+                string[] arr = new string[] {"32", "A", "Hello" };
+
+                foreach (var item in arr)
+                {
+                    Console.WriteLine(item);
+                }
+
+                arr[0] = Convert.ToString((Convert.ToInt32(arr[0]) + 10));
+                arr[2] = arr[2] + ", guys!";
+
+                foreach (var item in arr)
+                {
+                    Console.WriteLine(item);
+                }
+
+                Console.Read();
+            }
 
             void EmptyArr()
             {
