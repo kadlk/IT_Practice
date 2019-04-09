@@ -10,6 +10,7 @@ namespace IT_Practice
     {
         static void Main(string[] args)
         {
+            int x = 9;
         }
     }
 }
