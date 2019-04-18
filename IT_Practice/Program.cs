@@ -10,6 +10,25 @@ namespace IT_Practice
     {
         static void Main(string[] args)
         {
+
+            try
+            {
+                Motocyrcle moto = null;
+
+                moto.Fuel = 10;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"{ex.GetType()}, StackTrace: {ex.StackTrace}");
+                //throw;
+            }
+            
+            Console.Read();
         }
+    }
+    
+    class Motocyrcle
+    {
+        public int Fuel { get; set; }
     }
 }
