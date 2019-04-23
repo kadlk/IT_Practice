@@ -10,6 +10,10 @@ namespace IT_Practice
     {
         static void Main(string[] args)
         {
+            string input = "0123456weq";
+            input = input.StringDelete();
+            Console.WriteLine(input);
         }
     }
+
 }
